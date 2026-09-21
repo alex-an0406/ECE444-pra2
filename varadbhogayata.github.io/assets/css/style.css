@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4); 
+  border: 6px solid rgba(26, 26, 26, 0.4); 
   border-radius: 50% !important;
 }
 
@@ -85,7 +85,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #00796b;
+  color: #2e2e2e;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -97,7 +97,7 @@
 
 /* .readme:hover{
   color: white;
-  background-color: #00796b;
+  background-color: #2e2e2e;
 } */
 
 .contactme {
@@ -116,7 +116,7 @@
 }
 
 .contactme:hover{
-  color: #00796b;
+  color: #2e2e2e;
   background-color: white;
 }
 /* main body */
@@ -136,11 +136,11 @@ body {
 /* main a -- links */
 
 /* a {
-  color: #009688;
+  color: #444444;
 } */
 
 a {
-  color: #004d40;
+  color: #1a1a1a;
 }
 
 /* main blockqoute */
@@ -237,7 +237,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(16, 202, 56);
+  color: rgb(85, 85, 85);
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #a8a8a8 repeat;
   position: relative;
 }
 
@@ -352,7 +352,8 @@ h3 {
 }
 
 #intro.section .teal {
-  padding: 0 10px;
+  padding: 0 4px;
+  background-color: #333333 !important;
 }
 
 .overlay {
@@ -473,7 +474,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid #1a1a1a !important;
 }
 
 #skills .card.large {
@@ -549,7 +550,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #008073 !important;
+  color: #333333 !important;
 }
 
 /* .teal-text {
@@ -559,11 +560,11 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #008073 !important;
+  background-color: #333333 !important;
 }
 
 /* .teal {
-  background-color: #00695c !important;
+  background-color: #262626 !important;
 } */
 
 @media (min-width: 1200px) {
@@ -602,7 +603,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+    color: #444444;
     height: 56px;
     line-height: 56px;
   }
