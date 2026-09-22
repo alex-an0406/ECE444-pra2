@@ -108,6 +108,13 @@ function renderProjects(containerId, projectsToShow) {
   if (window.jQuery && jQuery.fn.tooltip) {
     jQuery(newCards).find(".tooltipped").tooltip();
   }
+
+  // The very first render happens before the page has scrolled to Projects,
+  // so scroll-reveal.js (loaded next) picks those cards up on its own. Cards
+  // added later (Load More) are already on screen, so animate them now.
+  if (cardsBefore > 0 && window.revealNow) {
+    window.revealNow(newCards);
+  }
 }
 
 // Shows the first few projects. "Load More" shows the rest, then the same
@@ -136,8 +143,12 @@ function setUpProjects() {
         // First time: build the remaining cards from the data.
         renderProjects("project-list", projects.slice(INITIAL_PROJECT_COUNT));
       } else {
-        // Already built earlier: just show them again.
-        extraCards().forEach((card) => (card.style.display = ""));
+        // Already built earlier: just show them again. Also re-add
+        // "is-visible" in case scrolling away and back hid them again.
+        extraCards().forEach((card) => {
+          card.style.display = "";
+          card.classList.add("is-visible");
+        });
       }
       button.textContent = "Show Less";
     } else {
